@@ -1,0 +1,15 @@
+## .vscode
+.vscode
+
+## apps
+apps/**/dist/*
+.clasp.json
+
+## node_modules
+node_modules
+
+## config
+config/*
+
+## log
+*.log

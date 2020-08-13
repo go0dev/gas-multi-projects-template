@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": false,
+    "declaration": false,
+    "outDir": "./dist",
+    "rootDir": "../",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "utils/*": ["../utils/src/*"]
+    },
+    "types": ["node", "jest", "google-apps-script"],
+    "downlevelIteration": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+  },
+  "include": ["./src/**/*", "./__test__/**/*"],
+  "exclude": ["node_modules", "webpack.config.js"]
+}

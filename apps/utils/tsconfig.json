@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018"
+    ],
+    "allowJs": false,
+    "declaration": false,
+    "outDir": "./dist",
+    "rootDir": "../",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node", "jest", "google-apps-script"],
+    "downlevelIteration": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+  },
+  "files": ["../../node_modules/@kintone/dts-gen/kintone.d.ts"],
+  "include": ["./src/**/*", "./__test__/**/*"],
+  "exclude": ["node_modules", "webpack.config.js"]
+}
